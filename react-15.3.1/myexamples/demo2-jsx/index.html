@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="../../build/react.js"></script>
+	<script type="text/javascript" src="../../build/react-dom.js"></script>
+	<script type="text/javascript" src="../../build/browser.min.js"></script>
+</head>
+<body>
+    <div id='example'>
+    	
+    </div>
+    <script type="text/babel">
+    var names = ['小咩', '小爱', '小航', '老刘'];
+    	ReactDOM.render(
+    	    <div>
+             {
+                 names.map(function(name){
+                     return <h1>hello,{name}!</h1>
+                 })
+             }   
+            </div>,
+    	    document.getElementById('example')
+    	);
+    </script>
+</body>
+</html>
